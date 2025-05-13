@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anna Karolina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="menu">
+        <h1 class="logo">Anna Karolina</h1>
+        <nav class="navegacao">
+            <ul>
+                <li>Sobre Mim</li>
+                <li>Formação</li>
+                <li>Experiências</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <img class="sobre-imagem" src="imagens/anna.jpeg" alt="Foto da Anna sendo descolada" width="200" />
+            <h2 class="sobre-nome">Anna Karolina</h2>
+            <h3 class="sobre-titulo">Universitária</h3>
+
+            <p class="sobre-descricao">
+                Sou universitária, atualmente faço o curso de <strong>ciências da computação na SP Tech.</strong>
+                Tenho 18 anos e sou fissurada em <strong>filmes de terror,</strong> tudo que envolve terror me
+                <i>encanta.</i>
+            </p>
+        </section>
+
+        <section id="formacao">
+            <h2 class="formacao-titulo">Formação</h2>
+
+            <div class="formacao-lista">
+                <h3>Desenvolvimento Front End</h3>
+                <a href="https://minasprogramam.com" target="_blank">Instituto Minas Programam</a>
+                <p>Curso introdutório de desenvolvimento Front End, ensinando conceitos básicos de HTML, CSS e
+                    Javascript.</p>
+
+                <h3>Curso TI Senac</h3>
+                <a href="https://sp.senac.br" target="_blank">Senac</a>
+                <p>Curso de três anos de TI em áreas diversas.</p>
+            </div>
+
+        </section>
+
+        <section id="experiencias">
+            <h2 class="experiencia-titulo">Experiências</h2>
+
+            <div class="experiencia-lista">
+                <h3>Modelo Studio Nazura</h3>
+                <a href="https://www.instagram.com/studionazura/" target="_blank">Studio Nazura</a>
+                <p>Posei para a coleção Futuro Neurótico.</p>
+
+                <h3>Desenvolvimento Sistema RPG</h3>
+                <a href="https://www.instagram.com/lyanzr/p/C97iWWCuLhV/?locale=ne_NP&hl=ar"
+                    target="_blank">Delinquentes</a>
+                <p>Ajudei a desenvolver um livro de regras para o RPG Delinquentes.</p>
+            </div>
+
+        </section>
+
+        <section id="contato">
+            <h2 class="contato-titulo">Entre em contato comigo</h2>
+            <form class="contato-formulario">
+                <div class="contato-grupoinput">
+                    <div class="contato-input">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" /><br />
+                    </div>
+
+                    <div class="contato-input">
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" /><br />
+                    </div>
+                </div>
+
+                <div class="contato-input">
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreve a sua mensagem" rows="5"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.pudim.com.br" target="_blank">Link para o site do pudim</a>
+    </footer>
+</body>
+
+</html>
