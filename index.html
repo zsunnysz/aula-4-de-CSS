@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt=BR">
 
 <head>
     <meta charset="UTF-8">
@@ -17,10 +17,10 @@
         <h1 class="logo">Anna Karolina</h1>
         <nav class="navegacao">
             <ul>
-                <li>Sobre Mim</li>
-                <li>Formação</li>
-                <li>Experiências</li>
-                <li>Contato</li>
+                <li><a href="#sobre">Sobre Mim</li></a>
+                <li><a href="#formacao">Formação</li></a>
+                <li><a href="#experiencias">Experiências</li></a>
+                <li><a href="#contato">Contato</li></a>
             </ul>
         </nav>
     </header>
@@ -74,27 +74,32 @@
             <form class="contato-formulario">
                 <div class="contato-grupoinput">
                     <div class="contato-input">
-                        <label for="nome">Nome: </label>
+                        <label for="nome">Nome </label>
                         <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" /><br />
                     </div>
 
                     <div class="contato-input">
-                        <label for="email">E-mail: </label>
+                        <label for="email">E-mail </label>
                         <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" /><br />
                     </div>
                 </div>
 
                 <div class="contato-input">
-                    <label for="mensagem">Mensagem: </label>
+                    <label for="mensagem">Mensagem </label>
                     <textarea id="mensagem" name="mensagem" placeholder="Escreve a sua mensagem" rows="5"></textarea>
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button class="btn-enviar" type="submit">Enviar</button>
             </form>
         </section>
     </main>
-    <footer>
-        <a href="https://www.pudim.com.br" target="_blank">Link para o site do pudim</a>
+    <footer class="rodape">
+        <div class="rodape-contatos">
+            <p><img src="imagens/jelly.png" alt="Pudim" /> <a href="https://www.pudim.com.br">Pudim</a> </p>
+        </div>
+        <div class="rodape-logo">
+            <img class="logo-minas" src="imagens/minas.png" alt="Logo do Minas Programam" />
+        </div>
     </footer>
 </body>
 
