@@ -3,56 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Anna Karolina</title>
+    <title>Porfólio Anna</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Comfortaa:wght@300..700&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <section id="capa">
+        <img class="sobre-imagem" src="imagens/paz-amor.png" alt="Foto paz e amor com a mão" />
+        <img class="logo" src="imagens/portfolio.png" alt="portfolio" />
+    </section>
+        
     <header id="menu">
-        <h1 class="logo">Anna Karolina</h1>
         <nav class="navegacao">
             <ul>
-                <li><a href="#sobre">Sobre Mim</li></a>
-                <li><a href="#formacao">Formação</li></a>
-                <li><a href="#experiencias">Experiências</li></a>
-                <li><a href="#contato">Contato</li></a>
-            </ul>
+                <li><a href="#sobre">sobre mim</li></a>
+                <li><a href="#formacoes">formações</li></a>
+                <li><a href="#experiencias">experiências</li></a>
+                <li><a href="#contatos">contatos</li></a>
+            </ul>           
         </nav>
     </header>
+
     <main>
-        <section id="sobre">
-            <img class="sobre-imagem" src="imagens/anna.jpeg" alt="Foto da Anna sendo descolada" width="200" />
-            <h2 class="sobre-nome">Anna Karolina</h2>
-            <h3 class="sobre-titulo">Universitária</h3>
-
-            <p class="sobre-descricao">
-                Sou universitária, atualmente faço o curso de <strong>ciências da computação na SP Tech.</strong>
-                Tenho 18 anos e sou fissurada em <strong>filmes de terror,</strong> tudo que envolve terror me
-                <i>encanta.</i>
-            </p>
-        </section>
-
-        <section id="formacao">
-            <h2 class="formacao-titulo">Formação</h2>
-
-            <div class="formacao-lista">
-                <h3>Desenvolvimento Front End</h3>
-                <a href="https://minasprogramam.com" target="_blank">Instituto Minas Programam</a>
-                <p>Curso introdutório de desenvolvimento Front End, ensinando conceitos básicos de HTML, CSS e
-                    Javascript.</p>
-
-                <h3>Curso TI Senac</h3>
-                <a href="https://sp.senac.br" target="_blank">Senac</a>
-                <p>Curso de três anos de TI em áreas diversas.</p>
+        
+        <section id="sobre" class="sobre">
+            <div class="imagem-sobre">
+                <img src="imagens/lado.png" alt="Desenho de perfil">
             </div>
-
+            <div class="texto-sobre">
+                <h2>sobre mim</h2>
+                <p>
+                    Eu sou a Anna Karolina — ou Sunny — e atualmente tenho 18 anos. Sou universitária e estou cursando o bacharelado em Ciência da Computação. Tenho um amor por filmes de terror, RPG e tudo que envolve tecnologia. Às vezes, posso acabar me perdendo um pouco observando o pôr do sol.
+                </p>
+            </div>
         </section>
-
+        
+        <section id="formacoes">
+            <h2 class="formacao-titulo">Formações</h2>
+        
+            <div class="formacao-lista">
+                <div class="formacao-item">
+                    <h3>Técnica de Assistente de Desenvolvimento de Aplicativos Computacionais</h3>
+                    <a href="https://minasprogramam.com" target="_blank">Instituto Minas Programam</a>
+                    <p>Curso introdutório de desenvolvimento Front End, ensinando conceitos básicos de HTML, CSS e Javascript.</p>
+                </div>
+        
+                <div class="formacao-item">
+                    <h3>Técnica de Assistente de Suporte e Manutenção de Computadores</h3>
+                    <a href="https://sp.senac.br" target="_blank">Senac</a>
+                    <p>Curso de três anos de TI em áreas diversas.</p>
+                </div>
+        
+                <div class="formacao-item">
+                    <h3>Técnica de Assistente de Operação de Redes de Computadores</h3>
+                    <a href="https://sp.senac.br" target="_blank">Senac</a>
+                    <p>Curso de três anos de TI em áreas diversas.</p>
+                </div>
+            </div>
+        </section>
+        
         <section id="experiencias">
             <h2 class="experiencia-titulo">Experiências</h2>
 
@@ -69,7 +84,7 @@
 
         </section>
 
-        <section id="contato">
+        <section id="contatos">
             <h2 class="contato-titulo">Entre em contato comigo</h2>
             <form class="contato-formulario">
                 <div class="contato-grupoinput">

@@ -4,14 +4,121 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 #menu {
+    position: absolute;
+    background-color: #2f4156;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 162, 21);
-    padding: 25px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#capa {
+    position: relative;
+    background-image: url("imagens/plano-de-fundo.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    right: 450px;
+    width: 850px;
+    bottom: 60px;
+    height: auto;
+    z-index: 1;
+    object-fit: contain;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.texto-sobre h2 {
+    font-family: "Modak", Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
+.texto-sobre p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.sobre {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: #f5efeb;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-sobre {
+    position: absolute;
+    left: -160px;
+    top: -150px;
+    height: 1200px;
+    width: auto;
+    z-index: 0;
+}
+
+.imagem-sobre img {
+    height: 100%;  
+    width: auto;
+    object-fit: contain;
+    display: block;
+        overflow: hidden;
+}
+
+.texto-sobre {
+    max-width: 600px;
+    width: 100%;
+    background-color: #2f4156;
+    color: white;
+    padding: 70px 30px;
+    padding-right: 30px;
+    padding-left: 15px;
+    border-radius: 50px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.texto-sobre h2 {
+    margin-top: 0;
+    font-family: "Modak" Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.texto-sobre p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.desenho-fundo {
+    position: absolute;
+    pointer-events: none;
 }
 
 .logo { 
@@ -21,7 +128,7 @@ body {
 .navegacao ul {
     list-style: none;
     display: flex;
-    color: rgb(255, 251, 251);
+    color: white;
 }
 
 .navegacao ul li {
@@ -35,35 +142,39 @@ body {
     text-decoration: none;
 }
 
-#sobre {
-    text-align: center;
-    background-color: #edeaea;
-    padding: 60px 20px;
-}
-
 .sobre-imagem {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+    position: absolute;
+    top: -20px;
+    bottom: 0;
+    left: 550px;
+    width: 800px;
+    height: auto;
+    z-index: 10;
+    pointer-events: none;
+    object-fit: contain;
+
 }
 
 .sobre-nome {
-    color: rgb(18, 127, 223);
+    color: rgb(255, 255, 255);
     font-size: 36px;
     margin-top: 20px;
+    z-index: 1;
 }
 
 .sobre-titulo {
     color: #C5C0C0;
     font-size: 24px;
     margin-top: 10px;
+    z-index: 1;
 }
 
 .sobre-descricao {
     font-size: 16px;
     line-height: 1.6;
     margin-top: 10px;
+    z-index: 1;
+    max-width: 600px;
 }
 
 #formacao {
@@ -71,42 +182,61 @@ body {
 }
 
 .formacao-titulo {
-    color: rgb(18, 127, 223);
+    color: #2f4156;
     font-size: 30px;
-    margin-bottom: 30px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 80px;
+}
+
+.formacao-item {
+    flex: 1;
+    min-width: 250px;
 }
 
 .formacao-lista {
-    width: 600px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 30px;
+    text-align: center;
 }
 
 .formacao-lista h3 {
     font-size: 20px;
     color: #828282;
     margin-bottom: 10px;
-    width: 120px;
+    text-align: center;
 }
 
 .formacao-lista a {
     color: #2f80ed;
+    color: #2f80ed;
     font-size: 20px;
     margin-bottom: 15px;
+    display: inline-block;
+    text-align: center;
 }
 
 .formacao-lista p {
     margin-top: 10px;
     margin-bottom: 30px;
     font-size: 20px;
+    text-align: center;
 }
 
 h1 {
-    color: rgb(255, 251, 251);
+    color: white;
     font-size: 36px;
 }
 
 h2 {
-    color: rgb(18, 127, 223);
+    color: rgb(255, 255, 255);
 }
 
 p {
@@ -178,14 +308,7 @@ p {
     margin-bottom: 20px;
 }
 
-.contato-input input {
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 20px;
-}
-
+.contato-input input,
 .contato-input textarea {
     padding: 10px;
     font-size: 18px;
@@ -239,4 +362,3 @@ p {
 .logo-minas {
     height: 80px;
 }
-
