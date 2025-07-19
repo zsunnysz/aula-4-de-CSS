@@ -19,7 +19,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("imagens/plano-de-fundo.png");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -28,8 +27,14 @@ body {
 
 .container-capa {
     padding: 50px;
-    display: flex;
     gap: 30px;
+    background-image: url("imagens/plano-de-fundo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .imagem-caixa {
@@ -38,6 +43,10 @@ body {
 
 .ilustracao-caixa {
     width: 50%;
+    position: relative;
+    margin: auto;
+    padding: 40px;
+    max-width: 50%;
 }
 
 
